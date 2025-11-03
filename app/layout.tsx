@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Lyra App',
-  description: 'Built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui',
+  title: 'Customer Support Agent',
+  description: 'Intelligent customer support chatbot with analytics',
 }
 
 export default function RootLayout({

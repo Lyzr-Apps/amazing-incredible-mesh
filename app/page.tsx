@@ -1,7 +1,8 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Send, Plus, Minimize2, MessageCircle } from 'lucide-react'
+import Link from 'next/link'
+import { Send, Plus, Minimize2, MessageCircle, BarChart3 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card } from '@/components/ui/card'
@@ -175,6 +176,16 @@ export default function HomePage() {
             </div>
           </div>
           <div className="flex gap-2">
+            <Link href="/admin">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="hover:bg-blue-500 text-white"
+                title="Admin Dashboard"
+              >
+                <BarChart3 className="h-5 w-5" />
+              </Button>
+            </Link>
             <Button
               onClick={handleNewConversation}
               variant="ghost"
